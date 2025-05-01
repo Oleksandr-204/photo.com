@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>my photo gallery💐</title>
+    <style> 
+        body {
+            font-family: fantasy;
+            background-color: #a0e7e5;
+            padding: 40px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 20px;
+            justify-content: flex-start;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+        .gallery-item {
+            background-color: lightblue;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .caption {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .gallery-item {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>my photo gallery💐</h1>
+    <p>私のWEBページご覧くださりありがとうございます！</p>
+    <p>私はそこら辺にいる大学生ですけども、最近カメラを買い、たくさんお花の写真を撮っています</p>
+    <p>ここでは、これまで撮ったお花の写真を載せるとともに、花の種類や花言葉について書いていこうと思っています。</p>
+    <p>ぜひお楽しみください🐈🌷</p>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="/Users/mimuratsukasa/Library/Mobile Documents/com~apple~CloudDocs/collection/img/bc650268-c4fa-4c3c-a63e-2757d89c6e78（中）.jpeg" alt="金魚草" />
+            <div class="caption">花の種類：金魚草<br>花言葉：「おしゃべり」</div>
+        </div>
+        <div class="gallery-item">
+            <img src="/Users/mimuratsukasa/Library/Mobile Documents/com~apple~CloudDocs/collection/img/9653e1c2-332a-402f-ae4e-f187e0b9ccfd（中）.jpeg" alt="金魚草" />
+            <div class="caption">同じく金魚草</div>
+        </div>
+        <div class="gallery-item">
+            <img src="/Users/mimuratsukasa/Library/Mobile Documents/com~apple~CloudDocs/collection/img/IMG_1624（中）.jpeg" alt="ウメ"/>
+            <div class="caption">花の種類：ウメ<br>花言葉：「気品」、「上品」、「澄んだ心」</div>
+        </div>
+    </div>
+    <a href="https://www.instagram.com/flow_photo20?igsh=MmU3NGQ4aHptZDVx&utm_source=qr">私のインスタをチェック🎶</a>
+</body>
+</html>
